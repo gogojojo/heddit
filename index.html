@@ -2,6 +2,7 @@
   <head>
     <title>My Angular App!</title>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
     <script src="app.js"></script>
   </head>
   <body ng-app="poster" ng-controller="postercontroller">
@@ -22,5 +23,17 @@
   <br>
   <button type="submit">Post</button>
 </form>
+<script type="text/ng-template" id="/home.html">
+  <div class="page-header">
+    <h1>Flapper News</h1>
+  </div>
+
+  <body ng-app="poster">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <ui-view></ui-view>
+    </div>
+  </div>
+</script>
   </body>
 </html>
